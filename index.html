@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>CSS Variables and JS</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  
   <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
-
   <div class="controls">
-    <label for="spacing">Spacing:</label>
-    <input id="spacing" type="range" name="spacing" min="1" max="200" value="10" data-sizing="px">
-
-    <label for="blur">Blur:</label>
-    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
-    
-    <label for="base">Base:</label>
+    <label class="hl" for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="0" max="100" value="0" data-sizing="px">
+    <label class="hl" for="base">Base:</label>
     <input id="base" type="color" name="base" min="0" max="25" value="#FF00FF">
-    
     <a href="https://www.eyeem.com/p/109557326">
-    <img src="https://cdn.eyeem.com/thumb/0487f20f3ff6a6ae2bc3b33c9f86c522c76fdb94-1501199230906/800/800" alt="bird">
+    <img id="img1" src="https://cdn.eyeem.com/thumb/0487f20f3ff6a6ae2bc3b33c9f86c522c76fdb94-1501199230906/800/800" alt="bird">
     </a>
-    
+    <label for="grayscale">Grayscale:</label>
+    <input id="grayscale" type="range" name="grayscale" min="0" max="100" value="0" data-sizing="%">
+    <label for="sepia">Sepia:</label>
+    <input id="sepia" type="range" name="sepia" min="0" max="100" value="0" data-sizing="%">
+    <label for="hue-rotate">Hue-Rotate:</label>
+    <input id="hue-rotate" type="range" name="hue-rotate" min="0" max="360" value="0" data-sizing="deg">
+    <a href="https://www.eyeem.com/p/105067386">
+    <img id="img2" src="https://cdn.eyeem.com/thumb/9a8399f9122a8fa2a75a9c3b1d39a262ea166ef4-1493840837388/w/1100") alt="Boots">
+    </a>
+    <label for="brightness">Brightness:</label>
+    <input id="brightness" type="range" name="brightness" min="0" max="100" value="100" data-sizing="%">
+    <label for="contrast">Contrast:</label>
+    <input id="contrast" type="range" name="contrast" min="0" max="100" value="100" data-sizing="%">
+    <label for="saturate">Saturate:</label>
+    <input id="saturate" type="range" name="saturate" min="0" max="100" value="100" data-sizing="%">
+    <label for="invert">Invert:</label>
+    <input id="invert" type="range" name="invert" min="0" max="100" value="0" data-sizing="%">
+    <a href="https://www.eyeem.com/p/102351905">
+    <img id="img3" src="https://cdn.eyeem.com/thumb/0a8277078f03ec809dae8cd1237c05f30f44eeef-1489707207189/800/800") alt="Boots">
+    </a>
+    <label for="opacity">Opacity:</label>
+    <input id="opacity" type="range" name="opacity" min="0" max="100" value="100" data-sizing="%">
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="0" data-sizing="px">
+    <a href="https://www.eyeem.com/p/95039740">
+    <img id="img4" src="https://cdn.eyeem.com/thumb/5cf28a76e826491e24f76dae71c33237b3d88bcd-1476956068664/w/1280") alt="Boots">
+    </a>
   </div>
-<script type="text/javascript" src="main.js"></script>
-
+  <script type="text/javascript" src="main.js"></script>
 </body>
+
 </html>
